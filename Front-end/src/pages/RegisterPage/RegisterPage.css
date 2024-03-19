@@ -1,0 +1,143 @@
+.register-box{
+    max-width: 800px;
+    min-width: 350px;
+    width: 60%;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, 0.219);
+    color: white;
+    padding: 20px 40px;
+}
+
+.header-register{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header-register h1{
+    cursor: default;
+}
+
+.btn-register-login{
+    border-radius: 15px;
+    border: 1px solid rgb(167, 167, 167);
+    padding: 10px 20px;
+    transition: 500ms;
+}
+
+.btn-register-login:hover{
+    background-color: rgba(255, 255, 255, 0.24);
+    color:black;
+}
+
+.register-campos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-register{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.campo-register label{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-register{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(167, 167, 167);
+}
+
+.gender-box{
+    margin: 20px 0;
+}
+
+.gender-box h2{
+    cursor: default;
+    font-size: 18px;
+}
+
+.options-gender{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gender-input{
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.gender-input > *{
+    cursor: pointer;
+}
+
+.botao-enviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid rgb(167, 167, 167);
+}
+
+.btn-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 500ms;
+    border-radius: 20px;
+}
+
+.btn-register:hover{
+    background-color: rgba(255, 255, 255, 0.24);
+    color:black;
+}
+
+@media only screen and (max-width: 1095px) {
+    .campo-register{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .campo-register label{
+        margin-bottom: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .register-box{
+        min-width: 300px;
+    }
+    .campo-register label{
+        align-items: center;
+    }
+    .input-register{
+        width: 100%;
+    }
+
+  }

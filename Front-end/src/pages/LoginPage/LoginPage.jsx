@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const LoginPage = ()=>{
     return(
-        <div className="main">
+        <div className="main-login">
             <div className="box-login">
                 <h1>Login</h1>
 
