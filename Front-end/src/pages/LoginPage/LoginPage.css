@@ -1,0 +1,92 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+}
+
+.box-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 20px;
+    color: white;
+}
+
+.login-form{
+    margin-top: 10px;
+}
+
+.input-perso{
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 20px;
+    margin: 20px 0;
+    padding: 10px 10px;
+}
+
+.input-perso input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+.input-perso input::placeholder{
+    color: white;
+}
+
+.aux{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.aux label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    width: 100%;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin: 10px 0;
+    background-color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login-form h3{
+    text-align: center;
+    font-size: 15px;
+}
+
+.link-reset{
+    text-decoration: none;
+    font-size: bold;
+    color: white;
+}
+
+.link-register{
+    font-weight: 500;
+}
+
+
+
