@@ -6,7 +6,7 @@ export const RegisterPage = ()=>{
         <div className="main-login">
             <form action="#" className="register-box">
                 <div className="header-register">
-                    <h1>Sing in</h1>
+                    <h1>Sign in</h1>
                     <Link to="/login" className="link-reset btn-register-login">Login</Link>
                 </div>
 

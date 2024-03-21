@@ -4,11 +4,10 @@
     width: 60%;
     border: 2px solid rgb(255, 255, 255, .2);
     border-radius: 10px;
-    backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    background-color: rgba(0, 0, 0, 0.219);
     color: white;
     padding: 20px 40px;
+    margin: 40px 0;
 }
 
 .header-register{
