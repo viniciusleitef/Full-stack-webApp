@@ -3,11 +3,20 @@ from database import SessionLocal, Base, engine
 from model import models
 from schemas.user import UserSchema
 from controller.user import get_user_by_email_db, get_all_users_db, create_user_db
+from fastapi.middleware.cors import CORSMiddleware
 
 Base.metadata.create_all(bind=engine) 
 db = SessionLocal()
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 async def root():

@@ -9,7 +9,7 @@ class User(Base):
     firstName: Mapped[str] = mapped_column(String[20], nullable=False, unique=False)
     lastName: Mapped[str] = mapped_column(String[20], nullable=False, unique=False)    
     email: Mapped[str] = mapped_column(String[30], nullable=False, unique=True)
-    cel: Mapped[int] = mapped_column(Integer, nullable=False, unique=False)
+    cel: Mapped[str] = mapped_column(String[11], nullable=False, unique=False)
     password: Mapped[str] = mapped_column(String[55], nullable=False, unique=False)
     gender: Mapped[str] = mapped_column(String[20], nullable=False, unique=False)   
     

@@ -2,10 +2,10 @@ from pydantic import BaseModel
 
 class UserSchema(BaseModel):
     firstName: str
-    email: str
     lastName:str
     email: str
-    cel: int
+    email: str
+    cel: str
     password: str
     gender: str
 
