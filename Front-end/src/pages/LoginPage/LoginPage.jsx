@@ -3,6 +3,9 @@ import { Link, useNavigate } from "react-router-dom";
 import {useState, useContext} from "react"
 import { AuthContext } from "../../context/AuthContext";
 
+import EmailImage from "../../assets/img/email.svg"
+import PasswordImage from "../../assets/img/key.svg"
+
 export const LoginPage = ()=>{
 
     const {error} = useContext(AuthContext)
@@ -38,12 +41,12 @@ export const LoginPage = ()=>{
                 <form onSubmit={handleLogin} className="login-form">
                     <div className="input-perso">
                         <input onChange={addingData} type="text" name="email" placeholder="E-mail"/>
-                        <i>icon</i>
+                        <img src={EmailImage} alt=""  className="login-img"/>
                     </div>
 
                     <div className="input-perso">
                         <input onChange={addingData} type="password" name="password" placeholder="Password"/>
-                        <i>icon</i>
+                        <img src={PasswordImage} alt=""  className="login-img"/>
                     </div>
 
                     <p className="errorMessage">{error}</p>

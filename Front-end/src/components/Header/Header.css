@@ -1,19 +1,61 @@
 header{
     width: 100%;
-    background-color: red;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-box{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 20px;
     height: 80px;
+}
+
+.header-logo h2{
+    color: rgb(105, 185, 255);
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 25px;
 }
 
 nav{
     display: flex;
-    gap: 10px;
+    gap: 40px;
+}
+
+.nav-link{
+    color: black;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.nav-link:hover{
+    color: #0082f3;
+}
+
+.responsive-menu{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive-menu img{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 500px){
+    nav{
+        display: none;
+    }
+
+    .responsive-menu{
+        display: flex;
+    }
 }

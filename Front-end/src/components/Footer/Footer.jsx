@@ -17,7 +17,7 @@ function Footer(){
 
                 <div className="footer-box">
                     <div className="footer-box-title-box">
-                        <h2 className="footer-box-title">ABOUT VELOCITY</h2>
+                        <h2 className="footer-box-title">USEFUL LINKS</h2>
                     </div>
 
                     <div className="footer-links-box">
@@ -41,7 +41,7 @@ function Footer(){
 
                 <div className="footer-box">
                     <div className="footer-box-title-box">
-                        <h2 className="footer-box-title">ABOUT VELOCITY</h2>
+                        <h2 className="footer-box-title">SOCIAL</h2>
                     </div>
 
                     <div className="footer-links-container"> 

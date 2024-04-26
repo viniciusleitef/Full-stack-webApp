@@ -1,6 +1,6 @@
 footer{
     width: 100%;
-    background-color: grey;
+    background-color: #EDEFF2;
 
     display: flex;
     justify-content: center;
@@ -33,15 +33,16 @@ footer{
 }
 
 .footer-box-title{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 200;
     letter-spacing: 2px;
+    color: #676770;
 }
 
 .footer-box-text{
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
-    letter-spacing: 2px;
+    color: #6A859C;
 }
 
 .footer-links-container{
@@ -59,9 +60,27 @@ footer{
     align-items: center;
 
     height: 40px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(213, 213, 224);
+}
+
+.footer-links{
+    color: #668CAD;
+    font-size: 13px;
 }
 
 .footer-icons{
     width: 25px;
+}
+
+@media screen and (max-width: 920px){
+    .footer-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .footer-box{
+        width: 100%;
+    }
 }

@@ -1,0 +1,24 @@
+.responsiveMenu-box{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #EDEFF2;
+    width: 100%;
+    height: 100%;
+}
+
+.responsiveMenu-box p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.5px solid rgb(105, 185, 255);
+}
+
+.responsive-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+}

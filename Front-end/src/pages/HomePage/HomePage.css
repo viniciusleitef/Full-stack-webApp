@@ -1,12 +1,13 @@
-
-
 .hero-section{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 65vh;
-    background-color: blue;
+    background-image: linear-gradient(rgba(46, 157, 255, 0.5), rgba(46, 157, 255, 0.22)), url("https://uploads-ssl.webflow.com/66299680dc496505b6bef520/66299680dc496505b6bef616_photo-1416359658663-73a3834895eb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .container-hero{
@@ -15,9 +16,8 @@
     gap: 30px;
     width: 70%;
     max-width: 800px;
-    min-width: 500px;
+    min-width: 400px;
     flex-direction: column;
-    border: 1px solid black;
     padding: 0px 30px;
 }
 
@@ -27,9 +27,10 @@
 }
 
 .container-hero-title{
-    font-size: 55px;
+    font-size: 60px;
     font-weight: 200;
     line-height: 100%;
+    color: white;
 }
 
 .container-hero-subtitle-box{
@@ -38,9 +39,10 @@
 }
 
 .container-hero-subtitle{
-    font-size: 20px;
-    font-weight: 200;
+    font-size: 25px;
+    font-weight: 300;
     letter-spacing: 2.5px;
+    color: rgb(46, 157, 255);
 }
 
 .container-hero-buttons-box{
@@ -53,7 +55,7 @@
 .wwd-section{
     width: 100%;
     height: 65vh;
-    background-color: green;
+    background-color: white;
 
     display: flex;
     justify-content: center;
@@ -75,12 +77,14 @@
 .container-wwd-title{
     font-size: 35px;
     font-weight: 200;
+    color: rgb(103, 103, 112);
 }
 
 .container-wwd-subtitle{
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 200;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
+    color: rgb(106, 133, 156);
 }
 
 .container-wwd-cards-box{
@@ -93,7 +97,8 @@
 .services-section{
     width: 100%;
     height: 90vh;
-    background-color: bisque;
+    background-color: rgb(25, 32, 36);
+    color: white;
 
     display: flex;
     justify-content: center;
@@ -101,9 +106,7 @@
 }
 
 .container-services{
-    width: 800px;
-    height: 500px;
-    border: 1px solid black;
+    width: 1200px;
 
     display: flex;
     justify-content: center;
@@ -120,14 +123,17 @@
 }
 
 .container-services-title{
-    font-size: 25px;
+    font-size: 30px;
+    letter-spacing: 3px;
     font-weight: 200;
 }
 
 .container-services-subtitle{
-    font-size: 15px;
+    text-align: center;
+    font-size: 20px;
     font-weight: 300;
     letter-spacing: 2px;
+    color: rgb(184, 184, 202);
 }
 
 .container-services-photo-box{
@@ -145,29 +151,31 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 
 }
 
 .container-services-service-title{
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 2px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 200;
+    letter-spacing: 5px;
 }
 
 .container-services-service-text{
     text-align: center;
-    font-size: 12px;
-    font-weight: 300
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
 }
 
 .container-services-photos{
-    width: 250px;
+    width: 450px;
 }
 
 .tab-section{
     width: 100%;
-    background-color: green;
+    background-color: white;
 
     display: flex;
     justify-content: center;
@@ -175,40 +183,47 @@
 }
 
 .tab-container{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 30px;
+    margin-top: 50px;
 }
 
 .tab-header{
-    width: 100%;
+    width: 90%;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
+    margin-bottom: 20px;
 }
 
 .tab-header-title{
     text-align: center;
-    font-size: 26px;
-    font-weight: 300;
+    font-size: 28px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    color: rgb(103, 103, 112);
 }
 
 .tab-header-subtitle{
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 300;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    color: rgb(142, 142, 156);
 }
 
 .tab-header-buttons{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -216,7 +231,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
 }
 
 .tab-photo{
@@ -225,18 +239,116 @@
 }
 
 .tab-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    width: 700px;    
+    width: 90vw;
+    height: auto;
+    max-width: 800px;
+    min-width: 300px;
     margin-bottom: 70px;
+    padding: 0 10px;
+
+}
+
+.tab-footer-title-box{
+    text-align: center;
+    width: 100%;
 }
 
 .tab-footer-title{
-    font-size: 25px;
+    width: 100%;
+    font-size: 30px;
     font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.tab-footer-text-box{
+    width: 100%;
 }
 
 .tab-footer-text{
+    width: 100%;
     font-size: 15px;
     font-weight: 300;
+    color: rgb(106, 133, 156);
 }
 
+@media screen and (max-width: 980px){
+    .container-services-photos{
+        width: 300px;
+    }
+
+    .container-services-photo-box{
+        width: 100%;
+    }
+
+    .tab-photo{
+        width: 630px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 690px){
+    .wwd-section{
+        margin: 50px 0;
+        height: auto;
+    }
+
+    .container-wwd-cards-box{
+       flex-direction: column;
+    }
+    
+    .services-section{
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .container-services-photo-box{
+        flex-wrap: wrap;
+    }
+
+    .container-services-photos{
+        width: 90%;
+    }
+
+    .container-services-photo-box{
+        gap: 100px;
+    }
+
+    .tab-photo-box{
+        width: 80vw;
+        min-width: 220px;
+    }
+
+    .tab-photo{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .container-hero{
+        width: 100%;
+        padding: 0 10px;
+        min-width: auto;
+    }
+
+    .container-hero-title{
+        font-size: 50px;
+    }
+
+    .container-hero-subtitle{
+        font-size: 18px;
+    }
+
+    .container-hero-buttons-box{
+        flex-wrap: wrap;
+    }
+
+    .tab-footer{
+        min-width: 200px;
+    }
+}

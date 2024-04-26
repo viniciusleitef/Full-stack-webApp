@@ -23,3 +23,10 @@
 .circle-img{
     width: 40px;
 }
+
+@media screen and (max-width: 980px){
+    .circle-box{
+       width: 60px;
+       height: 60px;
+    }
+}

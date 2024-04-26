@@ -13,9 +13,14 @@ import { Link, useNavigate } from "react-router-dom";
 export const HomePage = ()=>{
 
     const navigate = useNavigate()
-    const {logout} = useContext(AuthContext)
     const {auth} = useContext(AuthContext)
     const {userPersistence} = useContext(AuthContext)
+    const {logout} = useContext(AuthContext)
+
+    const handleLogout = ()=>{
+        logout()
+        console.log("logout")
+    }
 
     useEffect(() => {
        const token = decodeToken()
@@ -27,11 +32,6 @@ export const HomePage = ()=>{
            navigate("/login")
         } 
       }, []);
-    
-    const handleLogout = ()=>{
-        logout()
-        console.log("logout")
-    }
 
     const decodeToken = ()=>{
         const e = jwtDecode(auth)
@@ -40,7 +40,7 @@ export const HomePage = ()=>{
 
     return(
         <div className="main-home">
-            <Header></Header>
+            <Header logout={handleLogout}></Header>
 
             <section className="hero-section">
                 <div className="container-hero">
@@ -54,7 +54,7 @@ export const HomePage = ()=>{
 
                     <div className="container-hero-buttons-box">
                         <Button 
-                            backgroundColor="aqua"
+                            backgroundColor="rgb(105, 185, 255)"
                             border="none"
                             width="140"
                         >SIGN UP</Button>
@@ -142,7 +142,7 @@ export const HomePage = ()=>{
 
                             <div className="container-services-photos-title-box">
                                 <h2 className="container-services-service-title">
-                                    SERVICE ONE
+                                    SERVICE TWO
                                 </h2>
                             </div>
 
@@ -174,10 +174,10 @@ export const HomePage = ()=>{
                             </div>
                         </div>
 
-                        <div className="tab-header-buttons">
-                            <Button>TAB BUTTON 1</Button>
-                            <Button>TAB BUTTON 2</Button>
-                            <Button>TAB BUTTON 3</Button>
+                        <div className="tab-header-buttons">    
+                            <Button backgroundColor="#92A0AD">TAB BUTTON 1</Button>
+                            <Button backgroundColor="#92A0AD">TAB BUTTON 2</Button>
+                            <Button backgroundColor="rgb(46, 128, 182)">TAB BUTTON 3</Button>
                         </div>
                     </div>
 
@@ -186,6 +186,7 @@ export const HomePage = ()=>{
                     </div>
 
                     <div className="tab-footer">
+
                         <div className="tab-footer-title-box">
                             <h2 className="tab-footer-title">Heading</h2>
                         </div>
@@ -199,8 +200,6 @@ export const HomePage = ()=>{
             </section>
 
             <Footer></Footer>
-            <h1>Home Page</h1>
-            <button onClick={handleLogout}>Sair</button>
         </div>
     )
 }
