@@ -1,0 +1,19 @@
+header{
+    width: 100%;
+    background-color: red;
+}
+
+.header-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+}
+
+nav{
+    display: flex;
+    gap: 10px;
+}

@@ -1,8 +1,9 @@
 from fastapi import FastAPI
 from database import SessionLocal, Base, engine
 from model import models
-from schemas.user import UserSchema
-from controller.user import get_user_by_email_db, get_all_users_db, create_user_db
+from schemas.user import UserSchema 
+from schemas.userCredentials import UserCredentials
+from controller.user import get_user_by_email_db, get_all_users_db, create_user_db, verify_login_db
 from fastapi.middleware.cors import CORSMiddleware
 
 Base.metadata.create_all(bind=engine) 
@@ -29,6 +30,10 @@ async def get_all_user():
 @app.get("/user/email/{email}")
 async def get_user_by_email(email:str):
     return get_user_by_email_db(db, email)
+
+@app.post("/user/login")
+async def verify_login(user_credentials: UserCredentials):
+    return verify_login_db(db, user_credentials)
 
 @app.post("/user")
 async def create_user(user: UserSchema):

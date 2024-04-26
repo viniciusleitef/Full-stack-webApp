@@ -70,6 +70,7 @@
     margin: 10px 0;
     background-color: white;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .login-form h3{
@@ -87,5 +88,10 @@
     font-weight: 500;
 }
 
+.errorMessage{
+    text-align: center;
+    font-size: 9px;
+    color: red;
+}
 
 

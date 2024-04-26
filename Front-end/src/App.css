@@ -9,3 +9,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.nolink{
+  text-decoration: none;
+  color: black;
+}

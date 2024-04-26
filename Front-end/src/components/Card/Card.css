@@ -1,0 +1,27 @@
+.card-box{
+    width: 300px;
+    height: 290px;
+    border: 1px solid black;
+    border-radius: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-title{
+    letter-spacing: 4px;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.card-text-box{
+    text-align: center;
+}
+
+.card-text{
+    font-weight: 300;
+    font-size: 12px;
+}

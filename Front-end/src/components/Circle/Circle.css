@@ -1,0 +1,25 @@
+.circle-box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid  rgb(46, 157, 255);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-body{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: rgb(105, 185, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-img{
+    width: 40px;
+}

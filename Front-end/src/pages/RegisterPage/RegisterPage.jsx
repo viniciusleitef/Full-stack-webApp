@@ -2,21 +2,20 @@ import "./RegisterPage.css"
 import { Link } from "react-router-dom";
 import {useState} from "react"
 import axios from "axios"
+import { useApi } from "../../hooks/useApi";
 
 export const RegisterPage = ()=>{
-
+    const api = useApi()
     const [dadosFormulario, setDadosFormulario] = useState(
         {
             firstName: '',
             lastName: '',
             email: '',
-            cel: 0,
+            cel: '',
             password: '',
             gender: ''    
         }
     )
-
-    
 
     const addingData = (event)=>{
         const {name, value} = event.target
@@ -25,9 +24,9 @@ export const RegisterPage = ()=>{
 
     const sendData = async (event)=>{
         event.preventDefault()
-
+        console.log(dadosFormulario.firstName, dadosFormulario.lastName)
         try {
-            const response = await axios.post("http://127.0.0.1:8000/user", dadosFormulario)
+            const response = await api.register(dadosFormulario)
             if (response.status === 200){
                 alert("cadastro realizado com sucesso")
                 //redirecionar usuário para página de sucesso
