@@ -1,3 +1,11 @@
+.validateError{
+    color: red;
+    font-size: 12px;
+    text-align: center;
+    margin: 2px;
+    height: 20px;
+}
+
 .register-box{
     max-width: 800px;
     min-width: 350px;
@@ -46,7 +54,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .campo-register label{
