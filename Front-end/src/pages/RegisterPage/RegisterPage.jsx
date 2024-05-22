@@ -77,6 +77,15 @@ export const RegisterPage = ()=>{
                 gender: verifyFields.gender.error
             });
         }else{
+            setValidateError({
+                firstName: verifyFields.firstName.error,
+                lastName: verifyFields.lastName.error,
+                email: verifyFields.email.error,
+                cel: verifyFields.cel.error,
+                password: verifyFields.password.error,
+                confirmPassword: verifyFields.confirmPassword.error,
+                gender: verifyFields.gender.error
+            });
             return sendData()
         }
     }
