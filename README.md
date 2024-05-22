@@ -38,3 +38,6 @@ O projeto consiste em um sistema de autenticação que permite aos usuários se 
   -backend/: Contém todo o código relacionado ao backend do projeto, desenvolvido com FastAPI e Python.
   
   -frontend/: Contém todo o código relacionado ao frontend do projeto, desenvolvido com React.
+
+
+  Vídeo demonstrando a aplicação: https://www.youtube.com/watch?v=IX3ulV-CHVs
